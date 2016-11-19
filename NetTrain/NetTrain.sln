@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFInterface", "MEFInterfac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFImplement", "MEFImplement\MEFImplement.csproj", "{F734BB30-8ED9-4BA8-ACF3-7B737FE9F943}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyDemo", "LazyDemo\LazyDemo.csproj", "{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F734BB30-8ED9-4BA8-ACF3-7B737FE9F943}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F734BB30-8ED9-4BA8-ACF3-7B737FE9F943}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F734BB30-8ED9-4BA8-ACF3-7B737FE9F943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
