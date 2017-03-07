@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFImplement", "MEFImplemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyDemo", "LazyDemo\LazyDemo.csproj", "{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{419D5B8C-D00E-4131-91C3-4D856D1889AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE914F15-0579-46B3-8242-9F3DDD7E7BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419D5B8C-D00E-4131-91C3-4D856D1889AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419D5B8C-D00E-4131-91C3-4D856D1889AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419D5B8C-D00E-4131-91C3-4D856D1889AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419D5B8C-D00E-4131-91C3-4D856D1889AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
