@@ -10,7 +10,9 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using IocAndAop.Core;
 using System.Reflection;
+using log4net;
 
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 namespace IocAndAop
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -33,7 +35,19 @@ namespace IocAndAop
 
         private void SetupResolverRules(ContainerBuilder builder)
         {
-            builder.RegisterType<OutlookEmail>().As<iSendEmail>();
+            //builder.RegisterType<OutlookEmail>().As<iSendEmail>().AsSelf();
+            //builder.RegisterType<QqEmail>().As<iSendEmail>().AsSelf();
+
+            var dataAccess = Assembly.GetExecutingAssembly();
+            builder.RegisterAssemblyTypes(dataAccess)
+                   .Where(t => t.Name.EndsWith("Email"))
+                   .AsImplementedInterfaces().AsSelf();
+
+            //Assembly.GetCallingAssembly().me
+            
+            log4net.Config.XmlConfigurator.Configure();
+            builder.RegisterModule(new LoggingModule());
+            //builder.Register(c => LogManager.GetLogger(typeof(Object))).As<ILog>();
         }
     }
 }

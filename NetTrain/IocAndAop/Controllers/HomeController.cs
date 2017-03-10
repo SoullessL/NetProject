@@ -4,23 +4,32 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using IocAndAop.Core;
+using log4net;
+using System.Reflection;
 
 namespace IocAndAop.Controllers
 {
     public class HomeController : Controller
     {
-        readonly iSendEmail outlook;
+        readonly OutlookEmail outlook;
+        readonly ILog ilog;
 
-        public HomeController(iSendEmail outlook)
+        public HomeController(OutlookEmail outlook, ILog ilog)
         {
             this.outlook = outlook;
+            this.ilog = ilog;
         }
 
+        [HttpGet]
         public ActionResult About()
         {
 
             var t = outlook.SendEmail();
             ViewBag.Message = t;
+            //ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+            //log.Info("This is log5 net log.");
+
+            this.ilog.Info("This is log4 net log.");
 
             return View();
         }
@@ -30,7 +39,7 @@ namespace IocAndAop.Controllers
             return View();
         }
 
-        
+
 
         public ActionResult Contact()
         {

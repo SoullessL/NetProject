@@ -1,0 +1,12 @@
+????:2017-03-10 14:07:28,933 ??ID:[10] ????:INFO  ???:IocAndAop.Controllers.HomeController property:[(null)] - ????:This is log5 net log.
+????:2017-03-10 14:08:18,978 ??ID:[10] ????:INFO  ???:System.Object property:[(null)] - ????:This is log4 net log.
+Time:2017-03-10 14:10:04,143 , Thread ID:[10] , Level:INFO  Method:System.Object property:[(null)] - Message:This is log4 net log.
+Time:2017-03-10 17:07:38,987 , Thread ID:[9] , Level:INFO  Method:IocAndAop.Controllers.HomeController property:[(null)] - Message:This is log4 net log.
+Time:2017-03-10 17:12:01,155 , Thread ID:[10] , Level:INFO  Method:IocAndAop.Controllers.HomeController property:[context] - Message:This is log4 net log.
+Time:2017-03-10 17:13:00,986 , Thread ID:[12] , Level:INFO  Method:IocAndAop.Controllers.HomeController property:[context] - Message:This is log4 net log.
+Time:2017-03-10 17:20:16,194 , Thread ID:[9] , Level:INFO  Method:IocAndAop.Controllers.HomeController - Message:This is log4 net log.
+Time:2017-03-10 17:20:46,741 , Thread ID:[10] , Level:INFO  Method:IocAndAop.Controllers.HomeController - Message:This is log4 net log.
+Time:2017-03-10 17:24:13,563 , Thread ID:[12] , Level:INFO  Method:IocAndAop.Controllers.HomeController - Message:This is log4 net log.
+Time:2017-03-10 17:27:17,132 , Thread ID:[11] , Level:INFO  Method:.ctor - Message:This is log4 net log.
+Time:2017-03-10 17:29:04,813 , Thread ID:[10] , Level:INFO  Method:IocAndAop.Controllers.HomeController.ctor - Message:This is log4 net log.
+Time:2017-03-10 17:33:49,891 , Thread ID:[10] , Level:INFO  Method:IocAndAop.Controllers.HomeController - Message:This is log4 net log.
