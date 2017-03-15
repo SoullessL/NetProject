@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
@@ -42,10 +43,26 @@ namespace IocAndAop.Controllers
                 // This illustrates how to get the file names.
                 foreach (MultipartFileData file in provider.FileData)
                 {
-                    Trace.WriteLine(file.Headers.ContentDisposition.FileName);
-                    Trace.WriteLine("Server file path: " + file.LocalFileName);
+                    Debug.WriteLine(file.Headers.ContentDisposition.FileName);
+                    Debug.WriteLine("Server file path: " + file.LocalFileName);
                 }
-                return Request.CreateResponse(HttpStatusCode.OK);
+
+                foreach(var inputKey in provider.FormData.AllKeys)
+                {
+                    foreach (var val in provider.FormData.GetValues(inputKey))
+                    {
+                        Debug.WriteLine(string.Format("{0}: {1}", inputKey, val));
+                    }
+                }
+
+                // Add cookie
+                var cookie = new CookieHeaderValue("session-id", "123321");
+                cookie.Expires = DateTime.Now.AddDays(10);
+                cookie.Domain = Request.RequestUri.Host;
+                var res = Request.CreateResponse(HttpStatusCode.OK);
+                res.Headers.AddCookies(new CookieHeaderValue[] { cookie });
+
+                return res;
             }
             catch (System.Exception e)
             {

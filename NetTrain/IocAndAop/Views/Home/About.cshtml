@@ -10,6 +10,7 @@
 @using (Html.BeginForm("PostFromData", "api/Values", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <input name="name" value="Jay name" />
+    <input type="file" name="file" />
     <input type="submit" value="submit" />
 }
 

@@ -255,3 +255,5 @@ paket-files/
 /NetTrain/MEFInterface/Properties
 /NetTrain/MEFImplement/Properties
 /NetTrain/LazyDemo/Properties
+/NetTrain/IocAndAop/App_Data
+/NetTrain/IocAndAop/Temp
