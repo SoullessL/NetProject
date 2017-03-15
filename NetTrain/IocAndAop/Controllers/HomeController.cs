@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using IocAndAop.Core;
 using log4net;
 using System.Reflection;
+using System.Diagnostics;
 
 namespace IocAndAop.Controllers
 {
@@ -30,7 +31,7 @@ namespace IocAndAop.Controllers
             //log.Info("This is log5 net log.");
 
             this.ilog.Info("This is log4 net log.");
-
+            Debug.WriteLine("Process request");
             return View();
         }
 
