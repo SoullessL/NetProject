@@ -11,18 +11,18 @@ namespace Async
     {
         static void Main(string[] args)
         {
-            //asyncTrain();
+            asyncTrain();
             //asyncCancelTrain();
             //asyncReturn();
 
-            var t = Task.Run(() =>
-               {
-                   return GetNumber().GetAwaiter().GetResult();
-               });
-            t.Wait();
-            Console.WriteLine(t.Result);
+            //var t = Task.Run(() =>
+            //   {
+            //       return GetNumber().GetAwaiter().GetResult();
+            //   });
+            //t.Wait();
+            //Console.WriteLine(t.Result);
 
-            Task.WaitAll(GetNumber());
+            //Task.WaitAll(GetNumber());
             
             Console.ReadKey();
         }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -10,7 +7,6 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using IocAndAop.Core;
 using System.Reflection;
-using log4net;
 
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]
 namespace IocAndAop
