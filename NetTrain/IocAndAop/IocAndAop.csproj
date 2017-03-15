@@ -192,7 +192,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ValuesController1.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Core\iSendEmail.cs" />
     <Compile Include="Core\LoggingModule.cs" />
     <Compile Include="Core\OutlookEmail.cs" />

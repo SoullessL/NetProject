@@ -35,6 +35,14 @@ namespace IocAndAop.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult PostFormData()
+        {
+            return View();
+        }
+
+
+
         public ActionResult Index()
         {
             return View();

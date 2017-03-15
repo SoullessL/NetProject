@@ -5,3 +5,11 @@
 <h3>@ViewBag.Message</h3>
 
 <p>Use this area to provide additional information.</p>
+
+
+@using (Html.BeginForm("PostFromData", "api/Values", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input name="name" value="Jay name" />
+    <input type="submit" value="submit" />
+}
+
