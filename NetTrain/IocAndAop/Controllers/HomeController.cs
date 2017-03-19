@@ -7,6 +7,7 @@ using IocAndAop.Core;
 using log4net;
 using System.Reflection;
 using System.Diagnostics;
+using System.Web.Caching;
 
 namespace IocAndAop.Controllers
 {
@@ -30,8 +31,9 @@ namespace IocAndAop.Controllers
             //ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
             //log.Info("This is log5 net log.");
 
-            this.ilog.Info("This is log4 net log.");
+            //this.ilog.Info("This is log4 net log.");
             Debug.WriteLine("Process request");
+            Debug.WriteLine(HttpRuntime.Cache.Get("Cache1").ToString());
             return View();
         }
 

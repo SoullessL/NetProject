@@ -8,6 +8,9 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
+using IcoAndAop.DAL;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace IocAndAop.Controllers
 {
@@ -22,6 +25,29 @@ namespace IocAndAop.Controllers
         // GET api/<controller>/5
         public string Get(int id)
         {
+            using (var db = new EFDemoEntities())
+            {
+                // Execute Sql Command
+                // db.Database.ExecuteSqlCommand("insert person (name) values ('Test')");
+
+                // Proc
+                //SqlParameter[] pars = new SqlParameter[] {
+                //    new SqlParameter("@i",100),
+                //    new SqlParameter("@j",100),
+                //    new SqlParameter("@jjj",SqlDbType.Int)
+                //};
+                //pars[2].Direction = ParameterDirection.Output;
+                //var tempInt = db.Database.SqlQuery<int>("exec pro_Add @i,@j,@jjj output", pars).ToList();
+
+                using (var trans = db.Database.BeginTransaction())
+                {
+                    var person = new Person();
+                    person.Name = Guid.NewGuid().ToString();
+                    db.Person.Add(person);
+                    db.SaveChanges();
+                    trans.Commit();
+                }
+            }
             return "value";
         }
 
@@ -47,7 +73,7 @@ namespace IocAndAop.Controllers
                     Debug.WriteLine("Server file path: " + file.LocalFileName);
                 }
 
-                foreach(var inputKey in provider.FormData.AllKeys)
+                foreach (var inputKey in provider.FormData.AllKeys)
                 {
                     foreach (var val in provider.FormData.GetValues(inputKey))
                     {
