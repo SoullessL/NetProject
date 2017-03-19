@@ -15,3 +15,8 @@ Time:2017-03-14 18:00:02,333 , Thread ID:[7] , Level:INFO  Method:IocAndAop.Cont
 Time:2017-03-14 18:00:10,688 , Thread ID:[6] , Level:INFO  Method:IocAndAop.Controllers.HomeController - Message:This is log4 net log.
 Time:2017-03-14 18:00:13,077 , Thread ID:[6] , Level:INFO  Method:IocAndAop.Controllers.HomeController - Message:This is log4 net log.
 Time:2017-03-14 18:02:03,831 , Thread ID:[6] , Level:INFO  Method:IocAndAop.Controllers.HomeController - Message:This is log4 net log.
+Time£º2017-03-18 22:59:53,329 , Thread ID:[6] , Level£ºINFO  Method£ºIocAndAop.Controllers.HomeController - Message£ºThis is log4 net log.
+Time£º2017-03-18 23:04:45,672 , Thread ID:[6] , Level£ºINFO  Method£ºIocAndAop.Controllers.HomeController - Message£ºThis is log4 net log.
+Time£º2017-03-18 23:05:21,844 , Thread ID:[6] , Level£ºINFO  Method£ºIocAndAop.Controllers.HomeController - Message£ºThis is log4 net log.
+Time£º2017-03-18 23:06:27,626 , Thread ID:[6] , Level£ºINFO  Method£ºIocAndAop.Controllers.HomeController - Message£ºThis is log4 net log.
+Time£º2017-03-18 23:06:54,894 , Thread ID:[6] , Level£ºINFO  Method£ºIocAndAop.Controllers.HomeController - Message£ºThis is log4 net log.
