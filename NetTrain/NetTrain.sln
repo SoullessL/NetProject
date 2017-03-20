@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDemo", "WpfDemo\WpfDemo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IcoAndAop.DAL", "IcoAndAop.DAL\IcoAndAop.DAL.csproj", "{C057BB5F-7203-40EE-86E5-8BEE8FF3506E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfDemo", "WcfDemo\WcfDemo.csproj", "{C941EFBE-F61E-48A9-808F-A0D29630A9DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClient", "WcfClient\WcfClient.csproj", "{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{C057BB5F-7203-40EE-86E5-8BEE8FF3506E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C057BB5F-7203-40EE-86E5-8BEE8FF3506E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C057BB5F-7203-40EE-86E5-8BEE8FF3506E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C941EFBE-F61E-48A9-808F-A0D29630A9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C941EFBE-F61E-48A9-808F-A0D29630A9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C941EFBE-F61E-48A9-808F-A0D29630A9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C941EFBE-F61E-48A9-808F-A0D29630A9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
