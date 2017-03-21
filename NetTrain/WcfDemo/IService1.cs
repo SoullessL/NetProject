@@ -9,7 +9,7 @@ using System.Text;
 namespace WcfDemo
 {
     // 注意: 使用“重构”菜单上的“重命名”命令，可以同时更改代码和配置文件中的接口名“IService1”。
-    [ServiceContract]
+    [ServiceContract(CallbackContract = typeof(IUserCallBack))]
     public interface IService1
     {
 
@@ -20,6 +20,15 @@ namespace WcfDemo
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: 在此添加您的服务操作
+    }
+
+    public interface IUserCallBack
+    {
+        [DataMember]
+        string name { get; set; }
+
+        [OperationContract(IsOneWay = true)]
+        void PrintSomeThing(string str);
     }
 
 

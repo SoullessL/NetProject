@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:4000/Service1.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="1b55245c-da2a-415e-82c9-1eeb1b1602e6" SourceId="1" SourceUrl="http://localhost:4000/Service1.svc?xsd=xsd0" />
-    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="acca6763-2a93-4e76-8c93-a720c68f8c89" SourceId="1" SourceUrl="http://localhost:4000/Service1.svc?xsd=xsd1" />
-    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="bf9e2d32-0b7f-47e4-b4cf-a4c37a783d67" SourceId="1" SourceUrl="http://localhost:4000/Service1.svc?xsd=xsd2" />
-    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="b0ab8d44-f822-43f1-9ee8-e92b07411a2f" SourceId="1" SourceUrl="http://localhost:4000/Service1.svc?disco" />
-    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="1eb7705e-822e-4909-abf2-d63c7d57721f" SourceId="1" SourceUrl="http://localhost:4000/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service11.disco" MetadataType="Disco" ID="975755d7-8ee0-40fe-98fd-bf816fb31daa" SourceId="1" SourceUrl="http://hw-jiapji-01.fareast.corp.microsoft.com:4000/Service1.svc?disco" />
+    <MetadataFile FileName="Service11.wsdl" MetadataType="Wsdl" ID="9d90d4b9-0a52-404b-aa2a-d2488177b501" SourceId="1" SourceUrl="http://hw-jiapji-01.fareast.corp.microsoft.com:4000/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service13.xsd" MetadataType="Schema" ID="c7de06b7-7fff-4485-ab8f-94c160235578" SourceId="1" SourceUrl="http://hw-jiapji-01.fareast.corp.microsoft.com:4000/Service1.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service131.xsd" MetadataType="Schema" ID="6e208581-ac9c-43f6-8541-f0b3847b53b7" SourceId="1" SourceUrl="http://hw-jiapji-01.fareast.corp.microsoft.com:4000/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service132.xsd" MetadataType="Schema" ID="fb793f88-c46b-4863-b1c6-60b6399b1afb" SourceId="1" SourceUrl="http://hw-jiapji-01.fareast.corp.microsoft.com:4000/Service1.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

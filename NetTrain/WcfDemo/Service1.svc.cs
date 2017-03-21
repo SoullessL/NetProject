@@ -12,8 +12,12 @@ namespace WcfDemo
     // 注意: 为了启动 WCF 测试客户端以测试此服务，请在解决方案资源管理器中选择 Service1.svc 或 Service1.svc.cs，然后开始调试。
     public class Service1 : IService1
     {
+        IUserCallBack callback = null;
+
         public string GetData(int value)
         {
+            callback = OperationContext.Current.GetCallbackChannel<IUserCallBack>();
+            callback.PrintSomeThing("This is callback string in service.This is value from client:" + value + ".");
             return string.Format("You entered: {0}", value);
         }
 

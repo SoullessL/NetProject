@@ -53,14 +53,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\ServiceReference1\Service1.wsdl" />
-    <None Include="Connected Services\ServiceReference1\Service1.xsd">
+    <None Include="Connected Services\ServiceReference1\Service11.wsdl" />
+    <None Include="Connected Services\ServiceReference1\Service13.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\Service11.xsd">
+    <None Include="Connected Services\ServiceReference1\Service131.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\Service12.xsd">
+    <None Include="Connected Services\ServiceReference1\Service132.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReference1\WcfClient.ServiceReference1.CompositeType.datasource">
@@ -72,9 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\Service1.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
@@ -90,6 +87,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Service11.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
