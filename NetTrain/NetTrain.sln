@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfDemo", "WcfDemo\WcfDemo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClient", "WcfClient\WcfClient.csproj", "{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDemo", "DapperDemo\DapperDemo.csproj", "{A3054697-1410-489E-B8D6-FC8E9884FEC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27AC7011-D7AC-4EE0-97EF-A14A64883BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3054697-1410-489E-B8D6-FC8E9884FEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3054697-1410-489E-B8D6-FC8E9884FEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3054697-1410-489E-B8D6-FC8E9884FEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3054697-1410-489E-B8D6-FC8E9884FEC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
