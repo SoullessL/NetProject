@@ -21,7 +21,6 @@ namespace OwinDemo
                 HttpClient client = new HttpClient();
 
                 var response = client.GetAsync(baseAddress + "api/values").Result;
-
                 Console.WriteLine(response);
                 Console.WriteLine(response.Content.ReadAsStringAsync().Result);
                 Console.ReadLine();
